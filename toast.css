@@ -1,0 +1,65 @@
+/**
+ * YT FrameGrab — Toast Overlay Styles
+ */
+
+#ytfg-toast {
+    position: fixed;
+    bottom: 80px;
+    /* Above YouTube controls */
+    right: 20px;
+    background-color: rgba(26, 26, 46, 0.9);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 9999999;
+    /* Highest possible z-index */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+    /* Let clicks pass through to video */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#ytfg-toast.ytfg-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ytfg-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff5252;
+    box-shadow: 0 0 8px rgba(255, 82, 82, 0.6);
+    animation: ytfg-pulse 1.5s infinite;
+}
+
+@keyframes ytfg-pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.ytfg-counter {
+    color: #00e676;
+    font-weight: 700;
+}
