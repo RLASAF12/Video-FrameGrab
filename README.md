@@ -3,7 +3,7 @@
   <p><strong>Automatically capture clean screenshots from any HTML5 video. Downloads all frames as a single ZIP.</strong></p>
   
   <p>
-    <a href="https://github.com/yourusername/video-framegrab/releases"><img src="https://img.shields.io/github/v/release/yourusername/video-framegrab" alt="Release"></a>
+    <a href="https://github.com/RLASAF12/Video-FrameGrab/releases"><img src="https://img.shields.io/github/v/release/RLASAF12/Video-FrameGrab" alt="Release"></a>
     <img src="https://img.shields.io/badge/Chrome-Extension-00C853" alt="Chrome">
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
   </p>
@@ -14,9 +14,8 @@
 ---
 
 ## 📸 See It In Action
-> **Note to user**: Replace the URL below with your actual Remotion `FeatureShowcase` animated GIF demo from `assets/demo.gif` after rendering it!
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ofershap/remotion-readme-kit/main/assets/featureshowcase-example.gif" alt="Animated Demo" width="600">
+  <img src="assets/demo.png" alt="Video FrameGrab Demo" width="600">
 </div>
 
 ## ✨ Features
