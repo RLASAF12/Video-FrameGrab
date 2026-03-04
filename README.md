@@ -15,7 +15,7 @@
 
 ## 📸 See It In Action
 <div align="center">
-  <img src="assets/demo.webp" alt="Video FrameGrab Demo" width="600">
+  <video src="assets/demo.mp4" width="600" autoplay loop muted playsinline></video>
 </div>
 
 ## ✨ Features
