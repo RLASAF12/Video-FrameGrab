@@ -12,10 +12,10 @@
     "<all_urls>"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background.js"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "src/popup/popup.html"
   },
   "content_scripts": [
     {
@@ -23,11 +23,11 @@
         "<all_urls>"
       ],
       "css": [
-        "toast.css"
+        "src/content/toast.css"
       ],
       "js": [
-        "minizip.js",
-        "content.js"
+        "src/content/minizip.js",
+        "src/content/content.js"
       ],
       "run_at": "document_idle"
     }

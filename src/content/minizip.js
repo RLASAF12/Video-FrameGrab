@@ -1,5 +1,5 @@
 // ============================================================
-// YT FrameGrab — Minimal ZIP Builder
+// Video FrameGrab — Minimal ZIP Builder
 // Creates ZIP files (STORE method, no compression) in the
 // browser. PNGs are already compressed, so STORE is optimal.
 // ============================================================

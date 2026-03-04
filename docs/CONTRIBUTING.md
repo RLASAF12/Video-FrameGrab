@@ -5,7 +5,7 @@ First off, thanks for taking the time to contribute!
 ## Development Setup
 1. Clone the repository
 2. Load the extension in Chrome via `chrome://extensions` using "Load unpacked"
-3. Make your changes in the respective `.js` / `.html` files
+3. Make your changes in the `src/` directory
 4. Refresh the extension from the `chrome://extensions` page to apply changes
 
 ## Code Style
@@ -16,4 +16,4 @@ First off, thanks for taking the time to contribute!
 ## Submitting Pull Requests
 - Keep PRs focused on one feature/bug fix
 - Ensure the extension still works perfectly on major video platforms (YouTube, Vimeo)
-- Update `CHANGELOG.md` if necessary
+- Update `docs/CHANGELOG.md` if necessary

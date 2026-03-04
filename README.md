@@ -63,23 +63,29 @@ Open the **Advanced Settings** accordion inside the extension to adjust:
 ## 📂 File Structure
 
 ```text
-├── manifest.json       # Manifest V3 Configuration
-├── background.js       # Service worker for downloading files
-├── content.js          # Main capture, template, and UI logic
-├── minizip.js          # Lightweight pure-JS Dependency-Free Zip Library
-├── popup.html          # Pop-up Interface
-├── popup.css           # Styling
-├── popup.js            # Tabs, Inputs, and Storage handling
-├── toast.css           # Progress toast styling
-├── .gitignore          
-├── CHANGELOG.md        # Release history
-├── CONTRIBUTING.md     # Dev rules
-└── LICENSE             
+├── manifest.json               # Chrome Manifest V3
+├── src/
+│   ├── background.js           # Service worker (downloads, badge, history)
+│   ├── content/
+│   │   ├── content.js          # Capture engine, templates, toast
+│   │   ├── minizip.js          # Lightweight ZIP builder (zero deps)
+│   │   └── toast.css           # On-page progress overlay styles
+│   └── popup/
+│       ├── popup.html          # Extension popup UI
+│       ├── popup.css           # Dark theme styling
+│       └── popup.js            # Tabs, settings, live counter
+├── assets/                     # README demo images
+├── docs/
+│   ├── CHANGELOG.md            # Version history
+│   └── CONTRIBUTING.md         # Contribution guidelines
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ## ❓ FAQ
 **Why do I need to approve `<all_urls>` permission?**
-To function on any webpage hosting an HTML5 `<video>` element (Vimeo, Dailymotion, internal sites), it requires generic host permissions. The extension runs locallly and securely in your browser.
+To function on any webpage hosting an HTML5 `<video>` element (Vimeo, Dailymotion, internal sites), it requires generic host permissions. The extension runs locally and securely in your browser.
 
 **Can it capture DRM-protected videos?**
 No. Content protected by Widevine (Netflix, Hulu, Amazon) inherently blocks the HTML Canvas from accessing raw pixel data. 
@@ -88,7 +94,7 @@ No. Content protected by Widevine (Netflix, Hulu, Amazon) inherently blocks the 
 Because it stores frames in-memory before zipping, it depends on the resolution and capture length. A 1080p frame is roughly ~2-4MB raw. Be mindful on highly constrained memory systems if capturing thousands of frames in one sitting.
 
 ## 🤝 Contributing
-Please see `CONTRIBUTING.md` for guidelines on how to help out! PRs are welcome!
+Please see [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) for guidelines on how to help out! PRs are welcome!
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
