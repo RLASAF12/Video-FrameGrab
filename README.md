@@ -38,22 +38,9 @@
 
 ## 🛠️ How It Works
 
-```mermaid
-graph LR
-    A[Popup Settings] -->|Start / Stop| B(Content Script)
-    B -->|Time Checks| C{Video Element}
-    C -->|Frame Render| D[In-Memory Canvas]
-    D -->|Add to Buffer| E((File Array))
-    E -->|On Stop| F[minizip.js]
-    F -->|Blob URL| G[Background Worker]
-    G -->|chrome.downloads| H((Final ZIP))
-    
-    %% Styles
-    classDef process fill:#1a1a2e,stroke:#00e676,color:#fff;
-    classDef storage fill:#e94560,stroke:#fff,color:#fff;
-    class A,B,D,F,G process;
-    class E,H storage;
-```
+<div align="center">
+  <img src="assets/how-it-works.png" alt="How It Works — Doodle Explanation" width="700">
+</div>
 
 ## ⚙️ Configuration
 Open the **Advanced Settings** accordion inside the extension to adjust:
