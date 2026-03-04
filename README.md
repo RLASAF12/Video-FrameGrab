@@ -15,7 +15,7 @@
 
 ## 📸 See It In Action
 <div align="center">
-  <img src="assets/demo.png" alt="Video FrameGrab Demo" width="600">
+  <img src="assets/demo.webp" alt="Video FrameGrab Demo" width="600">
 </div>
 
 ## ✨ Features
