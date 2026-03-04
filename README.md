@@ -15,7 +15,9 @@
 
 ## 📸 See It In Action
 <div align="center">
-  <video src="assets/demo.mp4" width="600" autoplay loop muted playsinline></video>
+
+https://github.com/user-attachments/assets/d0bf1892-14a8-4433-9800-45731716a1b4
+
 </div>
 
 ## ✨ Features
